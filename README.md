@@ -12,9 +12,9 @@ QwenImage-2.1やMing-Imageのプロンプト拡張で出力されるJSON形式�
 	- [image_qwen_image_2_1_t2i_add_calc_ar.json](./workflows/Qwen-Image/image_qwen_image_2_1_t2i_add_calc_ar_sg.json)：ComfyUIの標準ワークフローに当てはめたワークフローです。サブグラフは展開しています。
 	- [image_qwen_image_2_1_t2i_add_calc_ar_sg.json](./workflows/Qwen-Image/image_qwen_image_2_1_t2i_add_calc_ar_sg.json)：サブグラフを展開せす，アスペクト比を取り出す部分をサブグラフの中に収めたワークフローです。
 - Ming-Image（ https://github.com/inclusionAI/Ming-Image ）
-	-  [parts_ming-image-style.json](./workflows/Ming-Image/ming_image_01_design_t2i_add_calc_ar_sg.json)：アスペクト比の部分を取り出して，解像度を再計算し，出力するワークフローです
-	- [ming_image_01_design_t2i_add_calc_ar.json](./workflows/Ming-Image/ming_image_01_design_t2i_add_calc_ar_sg.json)：ComfyUIの標準ワークフローに当てはめたワークフローです。サブグラフは展開しています。
-	- [ming_image_01_design_t2i_add_calc_ar_sg.json](./workflows/Ming-Image/ming_image_01_design_t2i_add_calc_ar_sg.json)：サブグラフを展開せす，アスペクト比を取り出す部分をサブグラフの中に収めたワークフローです。
+	-  [parts_ming-image-style.json](./workflows/MIng-Image/parts_ming-image-style.json)：アスペクト比の部分を取り出して，解像度を再計算し，出力するワークフローです
+	- [ming_image_01_design_t2i_add_calc_ar.json](./workflows/MIng-Image/ming_image_01_design_t2i_add_calc_ar.json)：ComfyUIの標準ワークフローに当てはめたワークフローです。サブグラフは展開しています。
+	- [ming_image_01_design_t2i_add_calc_ar_sg.json](./workflows/MIng-Image/ming_image_01_design_t2i_add_calc_ar_sg.json)：サブグラフを展開せす，アスペクト比を取り出す部分をサブグラフの中に収めたワークフローです。
 
 ## カスタムノード
 ### [calc_res_adapter.py](./custome_nodes/calc_res_adapter.py)

@@ -7,7 +7,7 @@
 QwenImage-2.1やMing-Imageのプロンプト拡張で出力されるJSON形式のプロンプトには，アスペクト比が含まれています。
 そのアスペクト比の部分を取り出して，解像度を再計算し，出力するワークフローと，それをComfyUIのオフィシャルワークフローに追加したワークフローが置いてあります。
 ダウンロードして，ComfyUIにドロップしてお使いください。
-- QwenImage-2.1（ https://github.com/QwenLM/Qwen-Image-2.1 ）
+- QwenImage-2.1（ https://github.com/QwenLM/Qwen-Image-2.1 ）：ComfyUI標準のWFでは，JSON形式で出力しないようになっています。下記WFでは，[Qwen-Image-2.1-PE-T2IのHugging Faceリポジトリ](https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I)で提供されている[システムプロンプト](https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I/blob/main/system_prompt.txt)に差し替えています。
 	-  [parts_qwen_style.json](./workflows/Qwen-Image/parts_qwen_style.json)：アスペクト比の部分を取り出して，解像度を再計算し，出力するワークフローです
 	- [image_qwen_image_2_1_t2i_add_calc_ar.json](./workflows/Qwen-Image/image_qwen_image_2_1_t2i_add_calc_ar_sg.json)：ComfyUIの標準ワークフローに当てはめたワークフローです。サブグラフは展開しています。
 	- [image_qwen_image_2_1_t2i_add_calc_ar_sg.json](./workflows/Qwen-Image/image_qwen_image_2_1_t2i_add_calc_ar_sg.json)：サブグラフを展開せす，アスペクト比を取り出す部分をサブグラフの中に収めたワークフローです。

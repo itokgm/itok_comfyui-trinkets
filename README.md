@@ -1,4 +1,4 @@
-# itok_comfyui-trinkets-
+# itok_comfyui-trinkets
 
 ## このリポジトリについて
 [ComfyUI](https://github.com/Comfy-Org/ComfyUI)のワークフローと簡単なカスタムノードがあります。

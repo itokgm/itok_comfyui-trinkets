@@ -22,7 +22,7 @@ QwenImage-2.1やMing-Imageのプロンプト拡張で出力されるJSON形式�
 与えられたwidthとheightを文字列で与えられたアスペクト比（"16:9"など）に基づいて再計算し出力します。出力は，grid_sizeの整数倍になるように丸められます。
 aspect_ratioがNoneまたは空の場合，calculateがFalseの場合は，widthとheightをそのまま出力します。
 ### 導入方法
-ファイルをダウンロードして「custom_nodes」フォルダに入れて，ComfyUIを再起動してください。
+ファイルをダウンロードして「custom_nodes」フォルダ直下に入れて，ComfyUIを再起動してください。
 「RecalcResolutionAdapter」ノードが使用できるようになります。
 ### 使用方法
 [サンプルワークフロー](./workflows/examples/recalc_resolution_adapter_example.json )

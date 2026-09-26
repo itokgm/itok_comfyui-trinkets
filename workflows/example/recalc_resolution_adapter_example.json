@@ -1,0 +1,1696 @@
+{
+  "id": "ec5b12ee-fd2d-4175-8c3f-a13166eec559",
+  "revision": 0,
+  "last_node_id": 679,
+  "last_link_id": 1132,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "ResolutionSelector",
+      "pos": [
+        1193.8312075957745,
+        3555.5181186703903
+      ],
+      "size": [
+        270,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            1118,
+            1130
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            1119,
+            1131
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.37.0",
+        "Node name for S&R": "ResolutionSelector"
+      },
+      "widgets_values": [
+        "1:1 (Square)",
+        1,
+        8
+      ],
+      "widgets_values_named": {
+        "aspect_ratio": "1:1 (Square)",
+        "megapixels": 1,
+        "multiple": 8
+      }
+    },
+    {
+      "id": 3,
+      "type": "PrimitiveString",
+      "pos": [
+        1163.103054811213,
+        3955.960403167904
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1122,
+            1132
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.37.0",
+        "Node name for S&R": "PrimitiveString"
+      },
+      "widgets_values": [
+        "1:0.75"
+      ],
+      "widgets_values_named": {
+        "value": "1:0.75"
+      }
+    },
+    {
+      "id": 4,
+      "type": "PreviewAny",
+      "pos": [
+        2011.2556364835136,
+        3436.492479738151
+      ],
+      "size": [
+        210,
+        122
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 1128
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.37.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 5,
+      "type": "PreviewAny",
+      "pos": [
+        2025.089793868291,
+        3664.8237537231385
+      ],
+      "size": [
+        210,
+        122
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 1129
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.37.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 675,
+      "type": "55171185-ef9e-475b-a6b3-44a188e54ff6",
+      "pos": [
+        1630.5107149013206,
+        3903.0596476080414
+      ],
+      "size": [
+        210,
+        156
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "aspect_ratio",
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 1122
+        },
+        {
+          "label": "width",
+          "name": "values.a",
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": 1118
+        },
+        {
+          "label": "height",
+          "name": "values.b",
+          "shape": 7,
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": 1119
+        },
+        {
+          "label": "Use",
+          "name": "switch",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "switch"
+          },
+          "link": null
+        },
+        {
+          "label": "grid_size",
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "width",
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            1120
+          ]
+        },
+        {
+          "label": "height",
+          "name": "INT_1",
+          "type": "INT",
+          "links": [
+            1121
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.37.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "4:3",
+        true,
+        8
+      ],
+      "widgets_values_named": {
+        "string": "4:3",
+        "switch": true,
+        "value": 8
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 676,
+      "type": "PreviewAny",
+      "pos": [
+        2016.8063960901934,
+        4134.890318371359
+      ],
+      "size": [
+        210,
+        122
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 1121
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.37.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 677,
+      "type": "PreviewAny",
+      "pos": [
+        2027.4119423958878,
+        3904.444472041896
+      ],
+      "size": [
+        210,
+        122
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 1120
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.37.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 679,
+      "type": "recalc_resolution_adapter_ar",
+      "pos": [
+        1573.3654949210636,
+        3547.2058775337696
+      ],
+      "size": [
+        270,
+        198
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 1130
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 1131
+        },
+        {
+          "name": "aspect_ratio",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": 1132
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            1128
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            1129
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "recalc_resolution_adapter_ar"
+      },
+      "widgets_values": [
+        0,
+        0,
+        true,
+        8,
+        "round",
+        ""
+      ],
+      "widgets_values_named": {
+        "width": 0,
+        "height": 0,
+        "calculate": true,
+        "grid_size": 8,
+        "rounding_method": "round",
+        "aspect_ratio": ""
+      }
+    }
+  ],
+  "links": [
+    [
+      1118,
+      2,
+      0,
+      675,
+      1,
+      "INT"
+    ],
+    [
+      1119,
+      2,
+      1,
+      675,
+      2,
+      "INT"
+    ],
+    [
+      1120,
+      675,
+      0,
+      677,
+      0,
+      "INT"
+    ],
+    [
+      1121,
+      675,
+      1,
+      676,
+      0,
+      "INT"
+    ],
+    [
+      1122,
+      3,
+      0,
+      675,
+      0,
+      "STRING"
+    ],
+    [
+      1128,
+      679,
+      0,
+      4,
+      0,
+      "INT"
+    ],
+    [
+      1129,
+      679,
+      1,
+      5,
+      0,
+      "INT"
+    ],
+    [
+      1130,
+      2,
+      0,
+      679,
+      0,
+      "INT"
+    ],
+    [
+      1131,
+      2,
+      1,
+      679,
+      1,
+      "INT"
+    ],
+    [
+      1132,
+      3,
+      0,
+      679,
+      2,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "55171185-ef9e-475b-a6b3-44a188e54ff6",
+        "version": 1,
+        "state": {
+          "lastGroupId": 50,
+          "lastNodeId": 679,
+          "lastLinkId": 1132,
+          "lastRerouteId": 9
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Calc resolution",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            1524.7477588723366,
+            -26.308526740237916,
+            128,
+            148
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            4207.026561422199,
+            -49.581293122694376,
+            128,
+            88
+          ]
+        },
+        "inputs": [
+          {
+            "id": "0064a5d9-3445-4353-b781-7f9d6b309185",
+            "name": "string",
+            "type": "STRING",
+            "linkIds": [
+              1074,
+              1075
+            ],
+            "localized_name": "string",
+            "label": "aspect_ratio",
+            "pos": [
+              1628.7477588723366,
+              -2.308526740237916
+            ]
+          },
+          {
+            "id": "c5c407f1-57b3-437f-8e95-654f7ae15970",
+            "name": "values.a",
+            "type": "FLOAT,INT,BOOLEAN",
+            "linkIds": [
+              1089,
+              1076
+            ],
+            "localized_name": "a",
+            "label": "width",
+            "pos": [
+              1628.7477588723366,
+              17.691473259762084
+            ]
+          },
+          {
+            "id": "9a862e2f-34c0-437f-9e22-8e0ffd6c9823",
+            "name": "values.b",
+            "type": "FLOAT,INT,BOOLEAN",
+            "linkIds": [
+              1090,
+              1081
+            ],
+            "localized_name": "b",
+            "label": "height",
+            "shape": 7,
+            "pos": [
+              1628.7477588723366,
+              37.691473259762084
+            ]
+          },
+          {
+            "id": "f9c06ddd-ee1c-4c54-8362-6fff0cf9ab6b",
+            "name": "switch",
+            "type": "BOOLEAN",
+            "linkIds": [
+              1078,
+              1082
+            ],
+            "label": "Use",
+            "pos": [
+              1628.7477588723366,
+              57.691473259762084
+            ]
+          },
+          {
+            "id": "495b9051-e2e2-49ff-b1a8-a51dd198409c",
+            "name": "value",
+            "type": "INT",
+            "linkIds": [
+              1084
+            ],
+            "label": "grid_size",
+            "pos": [
+              1628.7477588723366,
+              77.69147325976209
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "7c757dd3-294f-4d55-8766-11c4f5f63daf",
+            "name": "INT",
+            "type": "INT",
+            "linkIds": [
+              1079
+            ],
+            "localized_name": "INT",
+            "label": "width",
+            "pos": [
+              4231.026561422199,
+              -25.581293122694376
+            ]
+          },
+          {
+            "id": "964f544c-0561-44b1-91f8-8e88819bc41b",
+            "name": "INT_1",
+            "type": "INT",
+            "linkIds": [
+              1083
+            ],
+            "localized_name": "INT_1",
+            "label": "height",
+            "pos": [
+              4231.026561422199,
+              -5.581293122694376
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 658,
+            "type": "ComfyMathExpression",
+            "pos": [
+              3399.866064900694,
+              -164.62867607723035
+            ],
+            "size": [
+              225,
+              194.98183273459162
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "a",
+                "name": "values.a",
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1091
+              },
+              {
+                "localized_name": "b",
+                "name": "values.b",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1092
+              },
+              {
+                "localized_name": "c",
+                "name": "values.c",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1093
+              },
+              {
+                "localized_name": "d",
+                "name": "values.d",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "浮動小数点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": []
+              },
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": [
+                  1080
+                ]
+              },
+              {
+                "localized_name": "BOOL",
+                "name": "BOOL",
+                "type": "BOOLEAN",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyMathExpression"
+            },
+            "widgets_values": [
+              "round(a*b/c)*c"
+            ],
+            "widgets_values_named": {
+              "expression": "round(a*b/c)*c"
+            }
+          },
+          {
+            "id": 659,
+            "type": "PreviewAny",
+            "pos": [
+              2300.8889452785374,
+              14.18804367174107
+            ],
+            "size": [
+              225,
+              162.00276636308658
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "ソース",
+                "name": "source",
+                "type": "*",
+                "link": 1070
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "文字列",
+                "name": "STRING",
+                "type": "STRING",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 660,
+            "type": "ComfyNumberConvert",
+            "pos": [
+              2297.4275707406177,
+              -150.6279083178664
+            ],
+            "size": [
+              225,
+              78.01583851144254
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "値",
+                "name": "value",
+                "type": "INT,FLOAT,STRING,BOOLEAN",
+                "link": 1071
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "浮動小数点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": [
+                  1088,
+                  1092
+                ]
+              },
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyNumberConvert"
+            }
+          },
+          {
+            "id": 661,
+            "type": "ComfyMathExpression",
+            "pos": [
+              3035.248719488926,
+              -301.84156151236164
+            ],
+            "size": [
+              225,
+              175.01279601114805
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "a",
+                "name": "values.a",
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1085
+              },
+              {
+                "localized_name": "b",
+                "name": "values.b",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1086
+              },
+              {
+                "localized_name": "c",
+                "name": "values.c",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "浮動小数点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": [
+                  1091,
+                  1094
+                ]
+              },
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": []
+              },
+              {
+                "localized_name": "BOOL",
+                "name": "BOOL",
+                "type": "BOOLEAN",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyMathExpression"
+            },
+            "widgets_values": [
+              "sqrt(a / b)"
+            ],
+            "widgets_values_named": {
+              "expression": "sqrt(a / b)"
+            }
+          },
+          {
+            "id": 662,
+            "type": "ComfyMathExpression",
+            "pos": [
+              2674.5266057643303,
+              -388.73185949670074
+            ],
+            "size": [
+              225,
+              191.86044910897354
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "a",
+                "name": "values.a",
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1087
+              },
+              {
+                "localized_name": "b",
+                "name": "values.b",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1088
+              },
+              {
+                "localized_name": "c",
+                "name": "values.c",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "浮動小数点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": [
+                  1086
+                ]
+              },
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": []
+              },
+              {
+                "localized_name": "BOOL",
+                "name": "BOOL",
+                "type": "BOOLEAN",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyMathExpression"
+            },
+            "widgets_values": [
+              "a * b"
+            ],
+            "widgets_values_named": {
+              "expression": "a * b"
+            }
+          },
+          {
+            "id": 663,
+            "type": "RegexExtract",
+            "pos": [
+              1828.6759729932987,
+              -199.98641297145298
+            ],
+            "size": [
+              400,
+              262
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "文字列",
+                "name": "string",
+                "type": "STRING",
+                "widget": {
+                  "name": "string"
+                },
+                "link": 1074
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "文字列",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  1070,
+                  1071
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "RegexExtract"
+            },
+            "widgets_values": [
+              "4:3",
+              "(?<=:)([\\d.]+)",
+              "First Match",
+              true,
+              false,
+              false,
+              1
+            ],
+            "widgets_values_named": {
+              "string": "4:3",
+              "regex_pattern": "(?<=:)([\\d.]+)",
+              "mode": "First Match",
+              "case_insensitive": true,
+              "multiline": false,
+              "dotall": false,
+              "group_index": 1
+            }
+          },
+          {
+            "id": 664,
+            "type": "ComfyMathExpression",
+            "pos": [
+              1816.8292484638528,
+              246.24095775148788
+            ],
+            "size": [
+              400,
+              200
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "a",
+                "name": "values.a",
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1089
+              },
+              {
+                "localized_name": "b",
+                "name": "values.b",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1090
+              },
+              {
+                "localized_name": "c",
+                "name": "values.c",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "浮動小数点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": [
+                  1085
+                ]
+              },
+              {
+                "localized_name": "BOOL",
+                "name": "BOOL",
+                "type": "BOOLEAN",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyMathExpression"
+            },
+            "widgets_values": [
+              "a * b"
+            ],
+            "widgets_values_named": {
+              "expression": "a * b"
+            }
+          },
+          {
+            "id": 665,
+            "type": "PrimitiveInt",
+            "pos": [
+              1820.700288863262,
+              510.0473432654421
+            ],
+            "size": [
+              270,
+              82
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "値",
+                "name": "value",
+                "type": "INT",
+                "widget": {
+                  "name": "value"
+                },
+                "link": 1084
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": [
+                  1093,
+                  1096
+                ]
+              }
+            ],
+            "title": "multiple",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "PrimitiveInt"
+            },
+            "widgets_values": [
+              8,
+              "fixed"
+            ],
+            "widgets_values_named": {
+              "value": 8,
+              "fixed": "fixed"
+            }
+          },
+          {
+            "id": 666,
+            "type": "PreviewAny",
+            "pos": [
+              2280,
+              -370
+            ],
+            "size": [
+              225,
+              162.00276636308658
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "ソース",
+                "name": "source",
+                "type": "*",
+                "link": 1072
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "文字列",
+                "name": "STRING",
+                "type": "STRING",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 667,
+            "type": "RegexExtract",
+            "pos": [
+              1829.4650117772976,
+              -602.4350722185226
+            ],
+            "size": [
+              400,
+              262
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "文字列",
+                "name": "string",
+                "type": "STRING",
+                "widget": {
+                  "name": "string"
+                },
+                "link": 1075
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "文字列",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  1072,
+                  1073
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "RegexExtract"
+            },
+            "widgets_values": [
+              "4:3",
+              "([\\d.]+)(?=:)",
+              "First Match",
+              true,
+              false,
+              false,
+              1
+            ],
+            "widgets_values_named": {
+              "string": "4:3",
+              "regex_pattern": "([\\d.]+)(?=:)",
+              "mode": "First Match",
+              "case_insensitive": true,
+              "multiline": false,
+              "dotall": false,
+              "group_index": 1
+            }
+          },
+          {
+            "id": 668,
+            "type": "ComfyMathExpression",
+            "pos": [
+              3399.605247893527,
+              -445.21161682718264
+            ],
+            "size": [
+              225,
+              203.4656901191137
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "a",
+                "name": "values.a",
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1094
+              },
+              {
+                "localized_name": "b",
+                "name": "values.b",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1095
+              },
+              {
+                "localized_name": "c",
+                "name": "values.c",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1096
+              },
+              {
+                "localized_name": "d",
+                "name": "values.d",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "浮動小数点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": []
+              },
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": [
+                  1077
+                ]
+              },
+              {
+                "localized_name": "BOOL",
+                "name": "BOOL",
+                "type": "BOOLEAN",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyMathExpression"
+            },
+            "widgets_values": [
+              "round(a*b/c)*c"
+            ],
+            "widgets_values_named": {
+              "expression": "round(a*b/c)*c"
+            }
+          },
+          {
+            "id": 669,
+            "type": "ComfyNumberConvert",
+            "pos": [
+              2293.5838777188974,
+              -508.630950690138
+            ],
+            "size": [
+              225,
+              79.93404805438203
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "値",
+                "name": "value",
+                "type": "INT,FLOAT,STRING,BOOLEAN",
+                "link": 1073
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "浮動小数点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": [
+                  1087,
+                  1095
+                ]
+              },
+              {
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfyNumberConvert"
+            }
+          },
+          {
+            "id": 670,
+            "type": "ComfySwitchNode",
+            "pos": [
+              3743.9899929476724,
+              -312.1421560300165
+            ],
+            "size": [
+              270,
+              78
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "偽の場合",
+                "name": "on_false",
+                "shape": 7,
+                "type": "INT",
+                "link": 1076
+              },
+              {
+                "localized_name": "真の場合",
+                "name": "on_true",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1077
+              },
+              {
+                "localized_name": "スイッチ",
+                "name": "switch",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "switch"
+                },
+                "link": 1078
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "出力",
+                "name": "output",
+                "type": "INT",
+                "links": [
+                  1079
+                ]
+              }
+            ],
+            "title": "Width スイッチ",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfySwitchNode"
+            },
+            "widgets_values": [
+              false
+            ],
+            "widgets_values_named": {
+              "switch": false
+            }
+          },
+          {
+            "id": 671,
+            "type": "ComfySwitchNode",
+            "pos": [
+              3741.762825272818,
+              -120.28147505780203
+            ],
+            "size": [
+              270,
+              78
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "偽の場合",
+                "name": "on_false",
+                "shape": 7,
+                "type": "INT",
+                "link": 1081
+              },
+              {
+                "localized_name": "真の場合",
+                "name": "on_true",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 1080
+              },
+              {
+                "localized_name": "スイッチ",
+                "name": "switch",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "switch"
+                },
+                "link": 1082
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "出力",
+                "name": "output",
+                "type": "INT",
+                "links": [
+                  1083
+                ]
+              }
+            ],
+            "title": "Height スイッチ",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.37.0",
+              "Node name for S&R": "ComfySwitchNode"
+            },
+            "widgets_values": [
+              false
+            ],
+            "widgets_values_named": {
+              "switch": false
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 1070,
+            "origin_id": 663,
+            "origin_slot": 0,
+            "target_id": 659,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 1071,
+            "origin_id": 663,
+            "origin_slot": 0,
+            "target_id": 660,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 1072,
+            "origin_id": 667,
+            "origin_slot": 0,
+            "target_id": 666,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 1073,
+            "origin_id": 667,
+            "origin_slot": 0,
+            "target_id": 669,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 1074,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 663,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 1075,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 667,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 1076,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 670,
+            "target_slot": 0,
+            "type": "FLOAT,INT,BOOLEAN"
+          },
+          {
+            "id": 1077,
+            "origin_id": 668,
+            "origin_slot": 1,
+            "target_id": 670,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1078,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 670,
+            "target_slot": 2,
+            "type": "BOOLEAN"
+          },
+          {
+            "id": 1079,
+            "origin_id": 670,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 1080,
+            "origin_id": 658,
+            "origin_slot": 1,
+            "target_id": 671,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1081,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 671,
+            "target_slot": 0,
+            "type": "FLOAT,INT,BOOLEAN"
+          },
+          {
+            "id": 1082,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 671,
+            "target_slot": 2,
+            "type": "BOOLEAN"
+          },
+          {
+            "id": 1083,
+            "origin_id": 671,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1084,
+            "origin_id": -10,
+            "origin_slot": 4,
+            "target_id": 665,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 1085,
+            "origin_id": 664,
+            "origin_slot": 1,
+            "target_id": 661,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 1086,
+            "origin_id": 662,
+            "origin_slot": 0,
+            "target_id": 661,
+            "target_slot": 1,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1087,
+            "origin_id": 669,
+            "origin_slot": 0,
+            "target_id": 662,
+            "target_slot": 0,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1088,
+            "origin_id": 660,
+            "origin_slot": 0,
+            "target_id": 662,
+            "target_slot": 1,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1089,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 664,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 1090,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 664,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1091,
+            "origin_id": 661,
+            "origin_slot": 0,
+            "target_id": 658,
+            "target_slot": 0,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1092,
+            "origin_id": 660,
+            "origin_slot": 0,
+            "target_id": 658,
+            "target_slot": 1,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1093,
+            "origin_id": 665,
+            "origin_slot": 0,
+            "target_id": 658,
+            "target_slot": 2,
+            "type": "INT"
+          },
+          {
+            "id": 1094,
+            "origin_id": 661,
+            "origin_slot": 0,
+            "target_id": 668,
+            "target_slot": 0,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1095,
+            "origin_id": 669,
+            "origin_slot": 0,
+            "target_id": 668,
+            "target_slot": 1,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1096,
+            "origin_id": 665,
+            "origin_slot": 0,
+            "target_id": 668,
+            "target_slot": 2,
+            "type": "INT"
+          }
+        ],
+        "extra": {}
+      }
+    ]
+  },
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6985098526307826,
+      "offset": [
+        -542.2361471168406,
+        -3009.325838784164
+      ]
+    },
+    "frontendVersion": "1.53.6",
+    "VHS_latentpreview": true,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4,
+  "seed_widgets": {}
+}

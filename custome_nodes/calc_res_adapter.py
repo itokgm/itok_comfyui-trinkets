@@ -37,7 +37,7 @@ class recalc_resolution_adapter_ar(io.ComfyNode):
             inputs=[
                 io.Int.Input("width"),
                 io.Int.Input("height"),
-                io.String.Input("aspect_ratio",  optional=True, tooltip="Enter the aspect ratio as a string. Accepts ratios like '4:3' or decimals like '1.333'."),
+                io.String.Input("aspect_ratio",  default="16:9", optional=True, tooltip="Enter the aspect ratio as a string. Accepts ratios like '4:3' or decimals like '1.333'."),
                 io.Boolean.Input("calculate", default=True,
                             tooltip="select false, thru a calucurating"),
                 io.Int.Input("grid_size", default=8, 
